@@ -1,0 +1,760 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Roadmap - AIA (Advanced Interrupt Architecture) for Litex</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#roadmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="AIA (Advanced Interrupt Architecture) for Litex" class="md-header-nav__button md-logo" aria-label="AIA (Advanced Interrupt Architecture) for Litex">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            AIA (Advanced Interrupt Architecture) for Litex
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Roadmap
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Litex SOC with Advanced Interrupt Architecture
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AIA (Advanced Interrupt Architecture) for Litex" class="md-nav__button md-logo" aria-label="AIA (Advanced Interrupt Architecture) for Litex">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AIA (Advanced Interrupt Architecture) for Litex
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Litex SOC with Advanced Interrupt Architecture" class="md-nav__link">
+      Litex SOC with Advanced Interrupt Architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Roadmap
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Roadmap" class="md-nav__link md-nav__link--active">
+      Roadmap
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-roadmap" class="md-nav__link">
+    Implementation Roadmap
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-foundation" class="md-nav__link">
+    Phase 1: Foundation
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-core-infrastructure" class="md-nav__link">
+    1.1 Core Infrastructure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-aclint-implementation" class="md-nav__link">
+    1.2 ACLINT Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-aplic-development" class="md-nav__link">
+    Phase 2: APLIC Development
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: APLIC Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-basic-aplic" class="md-nav__link">
+    2.1 Basic APLIC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-advanced-aplic-features" class="md-nav__link">
+    2.2 Advanced APLIC Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-imsic-integration" class="md-nav__link">
+    Phase 3: IMSIC Integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: IMSIC Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-imsic-core" class="md-nav__link">
+    3.1 IMSIC Core
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-imsic-aplic-integration" class="md-nav__link">
+    3.2 IMSIC-APLIC Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-software-support" class="md-nav__link">
+    Phase 4: Software Support
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Software Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-bare-metal-support" class="md-nav__link">
+    4.1 Bare-metal Support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-linux-support" class="md-nav__link">
+    4.2 Linux Support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-verification--testing" class="md-nav__link">
+    Phase 5: Verification &amp; Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Verification &amp; Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-compliance-testing" class="md-nav__link">
+    5.1 Compliance Testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-system-integration" class="md-nav__link">
+    5.2 System Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-over-clic" class="md-nav__link">
+    Benefits Over CLIC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-roadmap" class="md-nav__link">
+    Implementation Roadmap
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-foundation" class="md-nav__link">
+    Phase 1: Foundation
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-core-infrastructure" class="md-nav__link">
+    1.1 Core Infrastructure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-aclint-implementation" class="md-nav__link">
+    1.2 ACLINT Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-aplic-development" class="md-nav__link">
+    Phase 2: APLIC Development
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: APLIC Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-basic-aplic" class="md-nav__link">
+    2.1 Basic APLIC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-advanced-aplic-features" class="md-nav__link">
+    2.2 Advanced APLIC Features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-imsic-integration" class="md-nav__link">
+    Phase 3: IMSIC Integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: IMSIC Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-imsic-core" class="md-nav__link">
+    3.1 IMSIC Core
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-imsic-aplic-integration" class="md-nav__link">
+    3.2 IMSIC-APLIC Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-software-support" class="md-nav__link">
+    Phase 4: Software Support
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Software Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-bare-metal-support" class="md-nav__link">
+    4.1 Bare-metal Support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-linux-support" class="md-nav__link">
+    4.2 Linux Support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-verification--testing" class="md-nav__link">
+    Phase 5: Verification &amp; Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Verification &amp; Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-compliance-testing" class="md-nav__link">
+    5.1 Compliance Testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-system-integration" class="md-nav__link">
+    5.2 System Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-over-clic" class="md-nav__link">
+    Benefits Over CLIC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">#</a></h1>
+<h2 id="implementation-roadmap">Implementation Roadmap<a class="headerlink" href="#implementation-roadmap" title="Permanent link">#</a></h2>
+<h3 id="phase-1-foundation">Phase 1: Foundation<a class="headerlink" href="#phase-1-foundation" title="Permanent link">#</a></h3>
+<h4 id="11-core-infrastructure">1.1 Core Infrastructure<a class="headerlink" href="#11-core-infrastructure" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Define AIA memory map regions in LiteX</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Create base classes for AIA components</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Implement CSR extensions for VexRiscv (Smaia)</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Setup interrupt routing infrastructure</li>
+</ul>
+<h4 id="12-aclint-implementation">1.2 ACLINT Implementation<a class="headerlink" href="#12-aclint-implementation" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Implement MTIMER device</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Implement MSWI device</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Ensure backward compatibility with existing CLINT</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Create device tree bindings</li>
+</ul>
+<h3 id="phase-2-aplic-development">Phase 2: APLIC Development<a class="headerlink" href="#phase-2-aplic-development" title="Permanent link">#</a></h3>
+<h4 id="21-basic-aplic">2.1 Basic APLIC<a class="headerlink" href="#21-basic-aplic" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Implement APLIC register interface</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Support for up to 1023 interrupt sources</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Direct delivery mode implementation</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Basic interrupt routing logic</li>
+</ul>
+<h4 id="22-advanced-aplic-features">2.2 Advanced APLIC Features<a class="headerlink" href="#22-advanced-aplic-features" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> MSI delivery mode support</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Hierarchical domain implementation</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Interrupt delegation between M/S modes</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Integration with system bus</li>
+</ul>
+<h3 id="phase-3-imsic-integration">Phase 3: IMSIC Integration<a class="headerlink" href="#phase-3-imsic-integration" title="Permanent link">#</a></h3>
+<h4 id="31-imsic-core">3.1 IMSIC Core<a class="headerlink" href="#31-imsic-core" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Implement interrupt file structure</li>
+<li class="task-list-item"><input type="checkbox" disabled/> MSI reception and recording logic</li>
+<li class="task-list-item"><input type="checkbox" disabled/> CSR interface (mtopei, stopei)</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Interrupt priority handling</li>
+</ul>
+<h4 id="32-imsic-aplic-integration">3.2 IMSIC-APLIC Integration<a class="headerlink" href="#32-imsic-aplic-integration" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> MSI forwarding from APLIC to IMSIC</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Unified interrupt routing</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Performance optimization</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Multi-core synchronization</li>
+</ul>
+<h3 id="phase-4-software-support">Phase 4: Software Support<a class="headerlink" href="#phase-4-software-support" title="Permanent link">#</a></h3>
+<h4 id="41-bare-metal-support">4.1 Bare-metal Support<a class="headerlink" href="#41-bare-metal-support" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> AIA initialization routines</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Interrupt handler templates</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Driver API for APLIC/IMSIC</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Example applications</li>
+</ul>
+<h4 id="42-linux-support">4.2 Linux Support<a class="headerlink" href="#42-linux-support" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Device tree bindings</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Linux interrupt controller drivers</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Integration with existing IRQ subsystem</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Performance benchmarking tools</li>
+</ul>
+<h3 id="phase-5-verification--testing">Phase 5: Verification &amp; Testing<a class="headerlink" href="#phase-5-verification--testing" title="Permanent link">#</a></h3>
+<h4 id="51-compliance-testing">5.1 Compliance Testing<a class="headerlink" href="#51-compliance-testing" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> RISC-V AIA specification compliance</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Interrupt latency measurements</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Priority handling verification</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Multi-core stress testing</li>
+</ul>
+<h4 id="52-system-integration">5.2 System Integration<a class="headerlink" href="#52-system-integration" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Full SoC integration testing</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Peripheral interrupt testing</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Software compatibility validation</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Documentation completion</li>
+</ul>
+<h2 id="benefits-over-clic">Benefits Over CLIC<a class="headerlink" href="#benefits-over-clic" title="Permanent link">#</a></h2>
+<p>While CLIC offers excellent real-time capabilities, AIA provides:</p>
+<ol>
+<li><strong>Better Scalability</strong>: Designed for systems with thousands of cores</li>
+<li><strong>MSI Support</strong>: Native support for modern peripheral standards</li>
+<li><strong>Virtualization</strong>: Hardware support for interrupt virtualization</li>
+<li><strong>Industry Alignment</strong>: Broader ecosystem support and standardization</li>
+<li><strong>Flexibility</strong>: Modular design allows partial implementation</li>
+</ol>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>Implementing AIA support in LiteX positions the framework at the forefront of RISC-V interrupt architecture evolution. This enhancement will enable LiteX-based SoCs to support modern peripherals, virtualization, and scale to larger multi-core systems while maintaining the framework's ease of use and flexibility.</p>
+<p>The modular approach allows for incremental implementation, reducing risk while delivering value at each phase. With proper execution, LiteX will become the go-to platform for exploring and deploying advanced RISC-V interrupt architectures.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Architecture/" title="Architecture" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Architecture
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ["navigation.expand", "tabs"],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
